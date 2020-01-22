@@ -10,7 +10,7 @@ class Tracker:
     def save(self):
         with open('moodData.json') as saveFile:
             saveFile.write(str(json.dumps(self.moodFile)))
-
-myTracker = Tracker()
-myTracker.add()
-myTracker.save()
+if __name__ == '__main__':
+    myTracker = Tracker()
+    myTracker.add()
+    myTracker.save()
